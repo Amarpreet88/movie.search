@@ -19,3 +19,8 @@ Testing libraries used:
 * jUnit
 * Espresso
 * Mockito
+
+## Screenshot
+[
+![Screenshot_20190603-183412_Search movies](https://user-images.githubusercontent.com/6768278/58845090-b54f4700-862e-11e9-9043-a163b1af3e94.jpg)
+](url)
