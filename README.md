@@ -1,6 +1,5 @@
 # OMDB MOVIE SEARCH PROJECT
-User can search all the movies by title which are available on OMDB API (http://www.omdbapi.com/?apikey={apiKey
-}&s=hello). The app will list the title, year and poster 
+User can search all the movies by title which are available on OMDB API (http://www.omdbapi.com/?apikey=apiKey&s=hello). The app will list the title, year and poster 
 of the movies using recycler view
 
 Project using android architecture components:
