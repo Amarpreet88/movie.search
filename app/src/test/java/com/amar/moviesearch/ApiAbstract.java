@@ -1,7 +1,5 @@
 package com.amar.moviesearch;
 
-import org.hamcrest.CoreMatchers;
-import org.hamcrest.MatcherAssert;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.runner.RunWith;
@@ -15,7 +13,6 @@ import java.util.Map;
 
 import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
-import okhttp3.mockwebserver.RecordedRequest;
 import okio.BufferedSource;
 import okio.Okio;
 import okio.Source;
@@ -46,7 +43,7 @@ public class ApiAbstract<T> {
 
 
     private void enqueueResponse(String fileName, Map<String, String> headers) throws IOException {
-        InputStream inputStream = ApiAbstract.class.getClassLoader().getResourceAsStream(String.format("api-response/%s", fileName));
+        InputStream inputStream = ApiAbstract.class.getClassLoader().getResourceAsStream(String.format("sample-api-response/%s", fileName));
         Source source = Okio.buffer(Okio.source(inputStream));
         MockResponse mockResponse = new MockResponse();
         for (Map.Entry<String, String> entry : headers.entrySet()) {

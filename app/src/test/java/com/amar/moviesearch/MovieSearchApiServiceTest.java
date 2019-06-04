@@ -22,7 +22,7 @@ public class MovieSearchApiServiceTest extends ApiAbstract<MovieSearchApi> {
 
     @Test
     public void fetchMovieTest() throws IOException {
-        enqueueResponse("test_movie.json");
+        enqueueResponse("sample_movie_payload.json");
         Response<MovieSearch> movieSearch1 = service.getMovieList("4355e65d", "hello").execute();
         Assert.assertEquals("Hello, My Name Is Doris", movieSearch1.body().getSearch().get(0).getTitle());
         Assert.assertEquals("2015", movieSearch1.body().getSearch().get(0).getYear());
