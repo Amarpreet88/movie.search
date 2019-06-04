@@ -8,7 +8,7 @@ import retrofit2.http.Query;
 
 public interface MovieSearchApi {
 
-    @GET("http://www.omdbapi.com/?")
+    @GET("/")
     Call<MovieSearch> getMovieList(@Query("apikey") String apiKey,
                                    @Query("s") String search);
 

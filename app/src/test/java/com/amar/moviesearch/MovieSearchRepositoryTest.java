@@ -84,7 +84,7 @@ public class MovieSearchRepositoryTest {
             return null;
         }).when(mockedMovieSearch).enqueue(any(Callback.class));
 
-        movieSearchRepository.retrieveMovieList("hello");
+        movieSearchRepository.retrieveMovies("hello");
         assertEquals(3, movieSearchedList.getValue().getSearch().size());
     }
 }

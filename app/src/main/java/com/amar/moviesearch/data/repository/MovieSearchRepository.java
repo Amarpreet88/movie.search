@@ -25,7 +25,7 @@ public class MovieSearchRepository {
         movieSearchedList.postValue(null);
     }
 
-    public void retrieveMovieList(String title) {
+    public void retrieveMovies(String title) {
         movieSearchApi.getMovieList(API_KEY, title)
                 .enqueue(new Callback<MovieSearch>() {
                     @Override

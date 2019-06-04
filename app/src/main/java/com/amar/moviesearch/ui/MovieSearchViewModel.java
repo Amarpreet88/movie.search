@@ -14,8 +14,8 @@ public class MovieSearchViewModel extends ViewModel {
         this.movieSearchRepository = movieSearchRepository;
     }
 
-    public void getMovieList(String title) {
-        movieSearchRepository.retrieveMovieList(title);
+    public void fetchMovies(String title) {
+        movieSearchRepository.retrieveMovies(title);
     }
 
     public LiveData<MovieSearch> getMovieList() {

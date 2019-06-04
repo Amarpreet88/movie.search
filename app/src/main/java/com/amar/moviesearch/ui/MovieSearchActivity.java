@@ -89,7 +89,7 @@ public class MovieSearchActivity extends AppCompatActivity {
         if (Intent.ACTION_SEARCH.equals(intent.getAction())) {
             String query = intent.getStringExtra(SearchManager.QUERY);
             progressBar.setVisibility(View.VISIBLE);
-            movieSearchViewModel.getMovieList(query);
+            movieSearchViewModel.fetchMovies(query);
             getMovieList();
         }
     }
